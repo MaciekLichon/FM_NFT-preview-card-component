@@ -21,7 +21,7 @@
   cursor: pointer;
 
   &::after {
-    content: url('/images/icon-view.svg');
+    content: url('../images/icon-view.svg');
     position: absolute;
     top: 0;
     left: 0;
@@ -73,11 +73,11 @@
   }
 
   .card__value::before {
-    content: url('/images/icon-ethereum.svg');
+    content: url('../images/icon-ethereum.svg');
   }
 
   .card__time::before {
-    content: url('/images/icon-clock.svg');
+    content: url('../images/icon-clock.svg');
   }
 }
 
