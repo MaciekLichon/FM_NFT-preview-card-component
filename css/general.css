@@ -1,0 +1,24 @@
+/* COLORS */
+/* TYPE */
+body {
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 400;
+  color: #8bacda;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.link:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsImdlbmVyYWwuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLFdBQUE7QUFTQSxTQUFBO0FDUkE7RUFDRSx5QkRHMEI7RUNGMUIsaUNETytCO0VDTi9CLG1CRGNrQjtFQ2JsQixnQkRRYztFQ1BkLGNESjBCO0VDSzFCLGFBQWE7RUFFYixhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQ0FyQjs7QURHQTtFQUNFLFlEZHdCO0VDZXhCLHFCQUFxQjtFQUNyQixzQkFBc0I7QUNBeEI7O0FESEE7RUFNSSxjRGQ0QjtBRWVoQyIsImZpbGUiOiJnZW5lcmFsLmNzcyJ9 */

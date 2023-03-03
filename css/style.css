@@ -1,0 +1,196 @@
+/* COLORS */
+/* TYPE */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.26;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* COLORS */
+/* TYPE */
+body {
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 400;
+  color: #8bacda;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.link:hover {
+  color: #00fff7;
+}
+
+.card {
+  background-color: #14253d;
+  padding: 1.5rem;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+}
+
+.card__image {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card__image::after {
+  content: url("/images/icon-view.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.card__image:hover::after {
+  opacity: 1;
+}
+
+.card__title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.card__description {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card__data .card__value, .card__data .card__time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.card__data .card__value {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.card__data .card__value::before {
+  content: url("/images/icon-ethereum.svg");
+}
+
+.card__data .card__time::before {
+  content: url("/images/icon-clock.svg");
+}
+
+.card__author {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #2f415b;
+}
+
+.card__author .author__avatar {
+  width: 33px;
+  height: 33px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media (min-width: 400px) {
+  .card__title {
+    margin-bottom: 16px;
+  }
+  .card__description {
+    margin-bottom: 24px;
+  }
+  .card__data {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .card__author {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi9zYXNzL3Jlc2V0LnNjc3MiLCJzdHlsZS5jc3MiLCIuLi9zYXNzL2dlbmVyYWwuc2NzcyIsIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxXQUFBO0FBU0EsU0FBQTtBQ1ZBOztDQ0lDO0FEREQ7RUFDRSxzQkFBc0I7QUNHeEI7O0FEREE7O0NDS0M7QURGRDtFQUNFLFNBQVM7QUNJWDs7QURGQTs7Q0NNQztBREhEO0VBQ0UsWUFBWTtBQ0tkOztBREhBOzs7O0NDU0M7QURKRDtFQUNFLGlCQUFpQjtFQUNqQixtQ0FBbUM7QUNNckM7O0FESkE7O0NDUUM7QURMRDtFQUNFLGNBQWM7RUFDZCxlQUFlO0FDT2pCOztBRExBOztDQ1NDO0FETkQ7RUFDRSxhQUFhO0FDUWY7O0FETkE7O0NDVUM7QURQRDtFQUNFLHlCQUF5QjtBQ1MzQjs7QURQQTs7Q0NXQztBRFJEO0VBQ0Usa0JBQWtCO0FDVXBCOztBRjNEQSxXQUFBO0FBU0EsU0FBQTtBR1JBO0VBQ0UseUJIRzBCO0VHRjFCLGlDSE8rQjtFR04vQixtQkhja0I7RUdibEIsZ0JIUWM7RUdQZCxjSEowQjtFR0sxQixhQUFhO0VBRWIsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixtQkFBbUI7QUQ4RHJCOztBQzNEQTtFQUNFLFlIZHdCO0VHZXhCLHFCQUFxQjtFQUNyQixzQkFBc0I7QUQ4RHhCOztBQ2pFQTtFQU1JLGNIZDRCO0FFNkVoQzs7QUVoRkE7RUFDRSx5QkpBMEI7RUlDMUIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsa0RBQWtEO0FGbUZwRDs7QUVoRkE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixnQkFBZ0I7RUFDaEIsZUFBZTtBRm1GakI7O0FFM0ZBO0VBV0kscUNBQXFDO0VBQ3JDLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sT0FBTztFQUNQLFdBQVc7RUFDWCxZQUFZO0VBQ1osd0NKckI4QztFSXNCOUMsVUFBVTtFQUNWLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLHdCQUF3QjtBRm9GNUI7O0FFMUdBO0VBMEJJLFVBQVU7QUZvRmQ7O0FFL0VBO0VBQ0UsWUoxQ3dCO0VJMkN4QixnQko5Qlc7RUkrQlgsbUJKN0JrQjtFSThCbEIsc0JBQXNCO0FGa0Z4Qjs7QUUvRUE7RUFDRSxtQkpqQ21CO0VJa0NuQixtQkFBbUI7RUFDbkIsZ0JKeENZO0VJeUNaLGdCQUFnQjtBRmtGbEI7O0FFL0VBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsbUJBQW1CO0FGa0ZyQjs7QUV0RkE7RUFPSSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLFFBQVE7QUZtRlo7O0FFNUZBO0VBYUksY0ovRDRCO0VJZ0U1QixnQkp4RFM7QUUySWI7O0FFakdBO0VBa0JJLHlDQUF5QztBRm1GN0M7O0FFckdBO0VBc0JJLHNDQUFzQztBRm1GMUM7O0FFL0VBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsU0FBUztFQUVULDZCSnJGMEI7QUVzSzVCOztBRXZGQTtFQVNJLFdBQVc7RUFDWCxZQUFZO0VBQ1osdUJKNUZzQjtFSTZGdEIsa0JBQWtCO0FGa0Z0Qjs7QUU5RUE7RUFDRTtJQUFlLG1CQUFtQjtFRmtGbEM7RUVqRkE7SUFBcUIsbUJBQW1CO0VGb0Z4QztFRW5GQTtJQUNFLGVKbkZtQjtJSW9GbkIscUJBQXFCO0VGcUZ2QjtFRW5GQTtJQUNFLGVKdkZtQjtJSXdGbkIscUJBQXFCO0VGcUZ2QjtBQUNGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

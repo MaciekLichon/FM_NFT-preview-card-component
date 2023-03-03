@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+body {
+  background-color: $clr-500;
+  font-family: $ff-regular;
+  font-size: $fs-accent;
+  font-weight: $fw-regular;
+  color: $clr-200;
+  padding: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: $clr-100;
+  text-decoration: none;
+  transition: color 0.4s;
+
+  &:hover {
+    color: $clr-accent;
+  }
+}
